@@ -1,5 +1,6 @@
 
 // const splitText = text.replace(' ', '').split('');
+let dictionary = require('./dictionary.json');
 
 module.exports = {
     breakText: breakText,
@@ -11,7 +12,7 @@ let braille
 // configuration for output
 function breakText(text) {
 
-    // handle zero length
+    // TODO: handle zero length
 
     const rowWeight = 3;
     const columnWeight = 2;
@@ -41,16 +42,9 @@ using object
 
 */
 
-// move to separate file
-const dictionary = {
-    'a' : [['@', ' '],[' ', ' '],[' ', ' ']],
-}
 
 function convert(char) {
     let braille = dictionary[char];
     return braille;
 }
-
-console.log(breakText('aaaaaaa'.split('')));
-console.log(convert('a'));
 
