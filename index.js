@@ -1,15 +1,10 @@
-
-// const splitText = text.replace(' ', '').split('');
 let dictionary = require('./dictionary.json');
+module.exports = {};
 
-module.exports = {
-    breakText: breakText,
-    convert: convert
-}
-
-let braille
+let braille = [];
 // takes cleaned, no spaces text, returns most even
 // configuration for output
+module.exports.breakText = breakText;
 function breakText(text) {
 
     // TODO: handle zero length
@@ -42,7 +37,9 @@ using object
 
 */
 
+// const splitText = text.replace(' ', '').split('');
 
+module.export.convert = convert;
 function convert(char) {
     let braille = dictionary[char];
     return braille;
