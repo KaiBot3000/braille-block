@@ -1,0 +1,14 @@
+{
+  "name": "braille-block",
+  "version": "1.0.0",
+  "description": "Generate blocks of braille text for entertainment purposes only",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Kai Dalgleish <kai@kaidalgleish.io>",
+  "license": "ISC",
+  "dependencies": {
+    "tape": "^4.9.0"
+  }
+}
