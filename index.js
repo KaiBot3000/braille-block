@@ -2,8 +2,11 @@ let dictionary = require('./dictionary.json');
 module.exports = {};
 
 let braille = [];
-// takes cleaned, no spaces text, returns most even
-// configuration for output
+
+/*
+ * Takes cleaned, no spaces text, returns
+ * most even configuration for output
+*/
 module.exports.breakText = breakText;
 function breakText(text) {
 
@@ -27,21 +30,13 @@ function breakText(text) {
     return finalColumns;
 }
 
-/* converts string into array of arrays braille
-using object
-- clean text- no spaces, array
-- calculate configuration
-- while (characters)
-    - iterate over (columns) characters
-        - push onto row((n*3)+i) arrays (first row will be 0, 1, 2, 2nd 3, 4, 5)
-
+/*
+ * Converts roman chars to braille chars
 */
-
-// const splitText = text.replace(' ', '').split('');
-
 module.export.convert = convert;
 function convert(char) {
     let braille = dictionary[char];
     return braille;
 }
 
+// const splitText = text.replace(' ', '').split('');

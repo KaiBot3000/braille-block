@@ -8,4 +8,7 @@ tape('calculate columns', function(assert) {
     assert.end();
 })
 
-// TODO: test braille conversion
+/* TODO:
+ - test braille conversion
+ - test custom output
+*/
